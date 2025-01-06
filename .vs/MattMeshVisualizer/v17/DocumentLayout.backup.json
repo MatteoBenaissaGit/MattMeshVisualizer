@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "F:\\git\\MattMeshVisualizer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|solutionrelative:MattMeshVisualizer\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|solutionrelative:MattMeshVisualizer\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|solutionrelative:MattMeshVisualizer\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|solutionrelative:MattMeshVisualizer\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|solutionrelative:MattMeshVisualizer\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|solutionrelative:MattMeshVisualizer\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE02B239-CBC6-4FCC-AE5A-61F25AD6FBA3}|MattMeshVisualizer\\MattMeshVisualizer.vcxproj|F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -50,24 +58,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "default.frag",
-              "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.frag",
-              "RelativeDocumentMoniker": "MattMeshVisualizer\\default.frag",
-              "ToolTip": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.frag",
-              "RelativeToolTip": "MattMeshVisualizer\\default.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-01-05T14:24:02.23Z",
+              "DocumentIndex": 0,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Camera.cpp",
+              "RelativeDocumentMoniker": "MattMeshVisualizer\\Camera.cpp",
+              "ToolTip": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Camera.cpp",
+              "RelativeToolTip": "MattMeshVisualizer\\Camera.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwGkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-06T14:21:34.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "Camera.h",
+              "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Camera.h",
+              "RelativeDocumentMoniker": "MattMeshVisualizer\\Camera.h",
+              "ToolTip": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Camera.h",
+              "RelativeToolTip": "MattMeshVisualizer\\Camera.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-06T14:16:08.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "shaderClass.cpp",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\shaderClass.cpp",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\shaderClass.cpp",
@@ -75,12 +96,11 @@
               "RelativeToolTip": "MattMeshVisualizer\\shaderClass.cpp",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-05T14:10:31.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T14:10:31.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "shaderClass.h",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\shaderClass.h",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\shaderClass.h",
@@ -88,25 +108,24 @@
               "RelativeToolTip": "MattMeshVisualizer\\shaderClass.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-05T14:11:06.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T14:11:06.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "default.vert",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.vert",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\default.vert",
               "ToolTip": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.vert",
               "RelativeToolTip": "MattMeshVisualizer\\default.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-01-05T13:58:49.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "EBO.cpp",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\EBO.cpp",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\EBO.cpp",
@@ -114,12 +133,11 @@
               "RelativeToolTip": "MattMeshVisualizer\\EBO.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-05T13:53:12.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:53:12.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "EBO.h",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\EBO.h",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\EBO.h",
@@ -127,12 +145,36 @@
               "RelativeToolTip": "MattMeshVisualizer\\EBO.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-05T13:53:08.79Z",
+              "WhenOpened": "2025-01-05T13:53:08.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Main.cpp",
+              "RelativeDocumentMoniker": "MattMeshVisualizer\\Main.cpp",
+              "ToolTip": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Main.cpp",
+              "RelativeToolTip": "MattMeshVisualizer\\Main.cpp",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAFwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-05T13:09:35.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "default.frag",
+              "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.frag",
+              "RelativeDocumentMoniker": "MattMeshVisualizer\\default.frag",
+              "ToolTip": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\default.frag",
+              "RelativeToolTip": "MattMeshVisualizer\\default.frag",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-05T14:24:02.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "VAO.cpp",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\VAO.cpp",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\VAO.cpp",
@@ -140,12 +182,11 @@
               "RelativeToolTip": "MattMeshVisualizer\\VAO.cpp",
               "ViewState": "AgIAAAEAAAAAAAAAAADgvxgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-05T13:46:33.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:46:33.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Texture.cpp",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Texture.cpp",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\Texture.cpp",
@@ -153,12 +194,11 @@
               "RelativeToolTip": "MattMeshVisualizer\\Texture.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAADgvy8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-05T13:46:27.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:46:27.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Texture.h",
               "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Texture.h",
               "RelativeDocumentMoniker": "MattMeshVisualizer\\Texture.h",
@@ -166,21 +206,7 @@
               "RelativeToolTip": "MattMeshVisualizer\\Texture.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-05T13:46:18.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Main.cpp",
-              "RelativeDocumentMoniker": "MattMeshVisualizer\\Main.cpp",
-              "ToolTip": "F:\\git\\MattMeshVisualizer\\MattMeshVisualizer\\Main.cpp*",
-              "RelativeToolTip": "MattMeshVisualizer\\Main.cpp*",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAGYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-05T13:09:35.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:46:18.864Z"
             }
           ]
         }
