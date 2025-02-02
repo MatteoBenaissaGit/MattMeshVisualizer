@@ -56,6 +56,12 @@
     <None Include="default.frag">
       <Filter>Fichiers de ressources\Shaders</Filter>
     </None>
+    <None Include="light.frag">
+      <Filter>Fichiers de ressources\Shaders</Filter>
+    </None>
+    <None Include="light.vert">
+      <Filter>Fichiers de ressources\Shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shaderClass.h">
@@ -79,6 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\benma\Downloads\pikachu.png">
+      <Filter>Fichiers de ressources\Textures</Filter>
+    </Image>
+    <Image Include="C:\Users\benma\Downloads\wall.png">
       <Filter>Fichiers de ressources\Textures</Filter>
     </Image>
   </ItemGroup>

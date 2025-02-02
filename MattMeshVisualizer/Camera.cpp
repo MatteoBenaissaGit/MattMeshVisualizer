@@ -1,29 +1,41 @@
-#include "Camera.h"
+#include"Camera.h"
+
+
 
 Camera::Camera(int width, int height, glm::vec3 position)
 {
 	Camera::width = width;
 	Camera::height = height;
 	Position = position;
-
-	speed = baseSpeed;
 }
 
-void Camera::Matrix(float FOVdeg, float nearPlane, float farPlane, Shader& shader, const char* uniform)
+void Camera::updateMatrix(float FOVdeg, float nearPlane, float farPlane)
 {
+	// Initializes matrices since otherwise they will be the null matrix
 	glm::mat4 view = glm::mat4(1.0f);
 	glm::mat4 projection = glm::mat4(1.0f);
 
+	// Makes camera look in the right direction from the right position
 	view = glm::lookAt(Position, Position + Orientation, Up);
-	projection = glm::perspective(glm::radians(FOVdeg), (float)(width / height), nearPlane, farPlane);
+	// Adds perspective to the scene
+	projection = glm::perspective(glm::radians(FOVdeg), (float)width / height, nearPlane, farPlane);
 
-	glUniformMatrix4fv(glGetUniformLocation(shader.ID, uniform), 1, GL_FALSE, glm::value_ptr(projection * view));
+	// Sets new camera matrix
+	cameraMatrix = projection * view;
 }
+
+void Camera::Matrix(Shader& shader, const char* uniform)
+{
+	// Exports camera matrix
+	glUniformMatrix4fv(glGetUniformLocation(shader.ID, uniform), 1, GL_FALSE, glm::value_ptr(cameraMatrix));
+}
+
+
 
 void Camera::Inputs(GLFWwindow* window)
 {
-	//ZQSD
-	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) 
+	// Handles key inputs
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 	{
 		Position += speed * Orientation;
 	}
@@ -39,8 +51,6 @@ void Camera::Inputs(GLFWwindow* window)
 	{
 		Position += speed * glm::normalize(glm::cross(Orientation, Up));
 	}
-
-	//up & down
 	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
 	{
 		Position += speed * Up;
@@ -49,18 +59,17 @@ void Camera::Inputs(GLFWwindow* window)
 	{
 		Position += speed * -Up;
 	}
-
-	//shift
-	if (glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
+	if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
 	{
-		speed = baseSpeed * 2;
+		speed = 0.1f;
 	}
-	else if (glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_RELEASE)
+	else if (glfwGetKey(window, GLFW_KEY_LEFT_SHIFT) == GLFW_RELEASE)
 	{
-		speed = baseSpeed;
+		speed = 0.02f;
 	}
 
-	//look around
+
+	// Handles mouse inputs
 	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
 	{
 		// Hides mouse cursor
@@ -101,7 +110,9 @@ void Camera::Inputs(GLFWwindow* window)
 	}
 	else if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_RELEASE)
 	{
+		// Unhides cursor since camera is not looking around anymore
 		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+		// Makes sure the next time the camera looks around it doesn't jump
 		firstClick = true;
 	}
 }
