@@ -90,5 +90,11 @@
     <Image Include="C:\Users\benma\Downloads\wall.png">
       <Filter>Fichiers de ressources\Textures</Filter>
     </Image>
+    <Image Include="C:\Users\benma\Downloads\planksSpec.png">
+      <Filter>Fichiers de ressources\Textures</Filter>
+    </Image>
+    <Image Include="C:\Users\benma\Downloads\planks.png">
+      <Filter>Fichiers de ressources\Textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>

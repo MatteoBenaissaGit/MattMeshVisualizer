@@ -1,8 +1,3 @@
-//------- Ignore this ----------
-#include<filesystem>
-namespace fs = std::filesystem;
-//------------------------------
-
 #include<iostream>
 #include<glad/glad.h>
 #include<GLFW/glfw3.h>
@@ -25,40 +20,19 @@ const unsigned int height = 800;
 
 
 
-// Vertices coordinates
 GLfloat vertices[] =
-{ //     COORDINATES     /        COLORS          /    TexCoord   /        NORMALS       //
-	-0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,      0.0f, -1.0f, 0.0f, // Bottom side
-	-0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 5.0f,      0.0f, -1.0f, 0.0f, // Bottom side
-	 0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 5.0f,      0.0f, -1.0f, 0.0f, // Bottom side
-	 0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, -1.0f, 0.0f, // Bottom side
-
-	-0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,     -0.8f, 0.5f,  0.0f, // Left Side
-	-0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,     -0.8f, 0.5f,  0.0f, // Left Side
-	 0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,     -0.8f, 0.5f,  0.0f, // Left Side
-
-	-0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
-	 0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 0.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
-	 0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
-
-	 0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 0.0f,      0.8f, 0.5f,  0.0f, // Right side
-	 0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.8f, 0.5f,  0.0f, // Right side
-	 0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.8f, 0.5f,  0.0f, // Right side
-
-	 0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, 0.5f,  0.8f, // Facing side
-	-0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,      0.0f, 0.5f,  0.8f, // Facing side
-	 0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.0f, 0.5f,  0.8f  // Facing side
+{ //     COORDINATES     /        COLORS        /    TexCoord    /       NORMALS     //
+	-1.0f, 0.0f,  1.0f,		0.0f, 0.0f, 0.0f,		0.0f, 0.0f,		0.0f, 1.0f, 0.0f,
+	-1.0f, 0.0f, -1.0f,		0.0f, 0.0f, 0.0f,		0.0f, 1.0f,		0.0f, 1.0f, 0.0f,
+	 1.0f, 0.0f, -1.0f,		0.0f, 0.0f, 0.0f,		1.0f, 1.0f,		0.0f, 1.0f, 0.0f,
+	 1.0f, 0.0f,  1.0f,		0.0f, 0.0f, 0.0f,		1.0f, 0.0f,		0.0f, 1.0f, 0.0f
 };
 
 // Indices for vertices order
 GLuint indices[] =
 {
-	0, 1, 2, // Bottom side
-	0, 2, 3, // Bottom side
-	4, 6, 5, // Left side
-	7, 9, 8, // Non-facing side
-	10, 12, 11, // Right side
-	13, 15, 14 // Facing side
+	0, 1, 2,
+	0, 2, 3
 };
 
 GLfloat lightVertices[] =
@@ -179,20 +153,13 @@ int main()
 	glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 
-
-
-	/*
-	* I'm doing this relative path thing in order to centralize all the resources into one folder and not
-	* duplicate them between tutorial folders. You can just copy paste the resources from the 'Resources'
-	* folder and then give a relative path from this folder to whatever resource you want to get to.
-	* Also note that this requires C++17, so go to Project Properties, C/C++, Language, and select C++17
-	*/
-	std::string parentDir = (fs::current_path().fs::path::parent_path()).string();
-	std::string texPath = "/Resources/YoutubeOpenGL 7 - Going 3D/";
-
 	// Texture
-	Texture brickTex((parentDir + texPath + "brick.png").c_str(), GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
-	brickTex.texUnit(shaderProgram, "tex0", 0);
+	Texture planksTexture("planks.png", GL_TEXTURE_2D, 0, GL_RGBA, GL_UNSIGNED_BYTE);
+	planksTexture.texUnit(shaderProgram, "tex0", 0);
+	Texture planksSpecularTexture("planksSpec.png", GL_TEXTURE_2D, 1, GL_RED, GL_UNSIGNED_BYTE);
+	planksSpecularTexture.texUnit(shaderProgram, "tex1", 1);
+
+
 
 	// Original code from the tutorial
 	/*Texture brickTex("brick.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
@@ -204,7 +171,7 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 
 	// Creates camera object
-	Camera camera(width, height, glm::vec3(0.0sqf, 0.0f, 2.0f));
+	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 
 	// Main while loop
 	while (!glfwWindowShouldClose(window))
@@ -227,7 +194,8 @@ int main()
 		// Export the camMatrix to the Vertex Shader of the pyramid
 		camera.Matrix(shaderProgram, "camMatrix");
 		// Binds texture so that is appears in rendering
-		brickTex.Bind();
+		planksTexture.Bind();
+		planksSpecularTexture.Bind();
 		// Bind the VAO so OpenGL knows to use it
 		VAO1.Bind();
 		// Draw primitives, number of indices, datatype of indices, index of indices
@@ -257,7 +225,7 @@ int main()
 	VAO1.Delete();
 	VBO1.Delete();
 	EBO1.Delete();
-	brickTex.Delete();
+	planksTexture.Delete();
 	shaderProgram.Delete();
 	lightVAO.Delete();
 	lightVBO.Delete();

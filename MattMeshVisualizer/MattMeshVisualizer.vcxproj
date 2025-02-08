@@ -163,6 +163,8 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\benma\Downloads\pikachu.png" />
+    <Image Include="C:\Users\benma\Downloads\planks.png" />
+    <Image Include="C:\Users\benma\Downloads\planksSpec.png" />
     <Image Include="C:\Users\benma\Downloads\wall.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
