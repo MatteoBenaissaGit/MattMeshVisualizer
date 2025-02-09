@@ -1,4 +1,10 @@
-﻿  Main.cpp
+﻿  EBO.cpp
+  Main.cpp
+  Mesh.cpp
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Mesh.cpp(55,43): warning C4267: 'argument' : conversion de 'size_t' en 'GLsizei', perte possible de données
   Texture.cpp
+  VAO.cpp
+F:\git\MattMeshVisualizer\MattMeshVisualizer\VAO.cpp(13,63): warning C4244: 'argument' : conversion de 'GLsizeiptr' en 'GLsizei', perte possible de données
+  VBO.cpp
   Génération de code en cours...
   MattMeshVisualizer.vcxproj -> F:\git\MattMeshVisualizer\x64\Debug\MattMeshVisualizer.exe
