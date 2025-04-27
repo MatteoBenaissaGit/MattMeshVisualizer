@@ -1,3 +1,287 @@
-﻿  Mesh.cpp
-F:\git\MattMeshVisualizer\MattMeshVisualizer\Mesh.cpp(81,43): warning C4267: 'argument' : conversion de 'size_t' en 'GLsizei', perte possible de données
+﻿  Main.cpp
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1406,9): warning C4005: 'glPolygonMode' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(596,9):
+      voir la définition précédente de « glPolygonMode »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1409,9): warning C4005: 'glScissor' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(598,9):
+      voir la définition précédente de « glScissor »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1418,9): warning C4005: 'glTexParameteri' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(601,9):
+      voir la définition précédente de « glTexParameteri »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1427,9): warning C4005: 'glTexImage2D' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(600,9):
+      voir la définition précédente de « glTexImage2D »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1433,9): warning C4005: 'glClear' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(559,9):
+      voir la définition précédente de « glClear »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1436,9): warning C4005: 'glClearColor' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(560,9):
+      voir la définition précédente de « glClearColor »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1454,9): warning C4005: 'glDisable' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(570,9):
+      voir la définition précédente de « glDisable »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1457,9): warning C4005: 'glEnable' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(574,9):
+      voir la définition précédente de « glEnable »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1463,9): warning C4005: 'glFlush' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(576,9):
+      voir la définition précédente de « glFlush »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1484,9): warning C4005: 'glPixelStorei' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(595,9):
+      voir la définition précédente de « glPixelStorei »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1490,9): warning C4005: 'glReadPixels' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(597,9):
+      voir la définition précédente de « glReadPixels »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1499,9): warning C4005: 'glGetError' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(581,9):
+      voir la définition précédente de « glGetError »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1505,9): warning C4005: 'glGetIntegerv' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(582,9):
+      voir la définition précédente de « glGetIntegerv »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1508,9): warning C4005: 'glGetString' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(587,9):
+      voir la définition précédente de « glGetString »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1526,9): warning C4005: 'glIsEnabled' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(592,9):
+      voir la définition précédente de « glIsEnabled »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(1532,9): warning C4005: 'glViewport' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(606,9):
+      voir la définition précédente de « glViewport »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2316,9): warning C4005: 'glDrawElements' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(572,9):
+      voir la définition précédente de « glDrawElements »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2343,9): warning C4005: 'glBindTexture' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(552,9):
+      voir la définition précédente de « glBindTexture »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2346,9): warning C4005: 'glDeleteTextures' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(567,9):
+      voir la définition précédente de « glDeleteTextures »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2349,9): warning C4005: 'glGenTextures' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(578,9):
+      voir la définition précédente de « glGenTextures »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2423,9): warning C4005: 'glActiveTexture' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(548,9):
+      voir la définition précédente de « glActiveTexture »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2565,9): warning C4005: 'glBlendFuncSeparate' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(556,9):
+      voir la définition précédente de « glBlendFuncSeparate »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2703,9): warning C4005: 'glBlendEquation' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(554,9):
+      voir la définition précédente de « glBlendEquation »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2734,9): warning C4005: 'glBindBuffer' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(550,9):
+      voir la définition précédente de « glBindBuffer »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2737,9): warning C4005: 'glDeleteBuffers' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(564,9):
+      voir la définition précédente de « glDeleteBuffers »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2740,9): warning C4005: 'glGenBuffers' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(577,9):
+      voir la définition précédente de « glGenBuffers »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2746,9): warning C4005: 'glBufferData' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(557,9):
+      voir la définition précédente de « glBufferData »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2749,9): warning C4005: 'glBufferSubData' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(558,9):
+      voir la définition précédente de « glBufferSubData »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2771,9): warning C4005: 'glBlendEquationSeparate' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(555,9):
+      voir la définition précédente de « glBlendEquationSeparate »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2786,9): warning C4005: 'glAttachShader' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(549,9):
+      voir la définition précédente de « glAttachShader »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2792,9): warning C4005: 'glCompileShader' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(561,9):
+      voir la définition précédente de « glCompileShader »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2795,9): warning C4005: 'glCreateProgram' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(562,9):
+      voir la définition précédente de « glCreateProgram »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2798,9): warning C4005: 'glCreateShader' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(563,9):
+      voir la définition précédente de « glCreateShader »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2801,9): warning C4005: 'glDeleteProgram' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(565,9):
+      voir la définition précédente de « glDeleteProgram »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2804,9): warning C4005: 'glDeleteShader' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(566,9):
+      voir la définition précédente de « glDeleteShader »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2807,9): warning C4005: 'glDetachShader' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(569,9):
+      voir la définition précédente de « glDetachShader »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2810,9): warning C4005: 'glDisableVertexAttribArray' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(571,9):
+      voir la définition précédente de « glDisableVertexAttribArray »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2813,9): warning C4005: 'glEnableVertexAttribArray' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(575,9):
+      voir la définition précédente de « glEnableVertexAttribArray »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2825,9): warning C4005: 'glGetAttribLocation' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(580,9):
+      voir la définition précédente de « glGetAttribLocation »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2828,9): warning C4005: 'glGetProgramiv' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(584,9):
+      voir la définition précédente de « glGetProgramiv »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2831,9): warning C4005: 'glGetProgramInfoLog' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(583,9):
+      voir la définition précédente de « glGetProgramInfoLog »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2834,9): warning C4005: 'glGetShaderiv' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(586,9):
+      voir la définition précédente de « glGetShaderiv »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2837,9): warning C4005: 'glGetShaderInfoLog' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(585,9):
+      voir la définition précédente de « glGetShaderInfoLog »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2843,9): warning C4005: 'glGetUniformLocation' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(589,9):
+      voir la définition précédente de « glGetUniformLocation »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2858,9): warning C4005: 'glGetVertexAttribiv' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(591,9):
+      voir la définition précédente de « glGetVertexAttribiv »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2861,9): warning C4005: 'glGetVertexAttribPointerv' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(590,9):
+      voir la définition précédente de « glGetVertexAttribPointerv »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2864,9): warning C4005: 'glIsProgram' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(593,9):
+      voir la définition précédente de « glIsProgram »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2870,9): warning C4005: 'glLinkProgram' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(594,9):
+      voir la définition précédente de « glLinkProgram »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2873,9): warning C4005: 'glShaderSource' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(599,9):
+      voir la définition précédente de « glShaderSource »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2876,9): warning C4005: 'glUseProgram' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(604,9):
+      voir la définition précédente de « glUseProgram »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2891,9): warning C4005: 'glUniform1i' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(602,9):
+      voir la définition précédente de « glUniform1i »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(2933,9): warning C4005: 'glUniformMatrix4fv' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(603,9):
+      voir la définition précédente de « glUniformMatrix4fv »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(3047,9): warning C4005: 'glVertexAttribPointer' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(605,9):
+      voir la définition précédente de « glVertexAttribPointer »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(3247,9): warning C4005: 'glGetStringi' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(588,9):
+      voir la définition précédente de « glGetStringi »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(3316,9): warning C4005: 'glBindVertexArray' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(553,9):
+      voir la définition précédente de « glBindVertexArray »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(3319,9): warning C4005: 'glDeleteVertexArrays' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(568,9):
+      voir la définition précédente de « glDeleteVertexArrays »
+  
+F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(3322,9): warning C4005: 'glGenVertexArrays' : redéfinition de macro
+  (compiler le fichier source 'Main.cpp')
+      F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(579,9):
+      voir la définition précédente de « glGenVertexArrays »
+  
   MattMeshVisualizer.vcxproj -> F:\git\MattMeshVisualizer\x64\Debug\MattMeshVisualizer.exe
