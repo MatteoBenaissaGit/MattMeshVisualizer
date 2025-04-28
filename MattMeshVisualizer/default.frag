@@ -25,6 +25,10 @@ uniform vec3 lightPos;
 uniform vec3 camPos;
 
 
+//imgui
+uniform vec4 imguiColor;
+
+
 vec4 pointLight()
 {	
 	// used in two variables so I calculate it here to not have to do it twice
@@ -57,7 +61,7 @@ vec4 pointLight()
 vec4 direcLight()
 {
 	// ambient lighting
-	float ambient = 0.20f;
+	float ambient = 0.50f;
 
 	// diffuse lighting
 	vec3 normal = normalize(Normal);
@@ -106,5 +110,5 @@ vec4 spotLight()
 void main()
 {
 	// outputs final color
-	FragColor = direcLight();
+	FragColor = direcLight() * imguiColor;
 }
