@@ -21,17 +21,21 @@ uniform vec4 imguiColor;
 uniform vec4 imguiLightColor;
 uniform float lightIntensity;
 uniform int lightType;
+uniform float lightHeight;
+uniform float lightXPos;
+uniform float lightZPos;
+uniform float lightPower;
 
 
 vec4 pointLight()
 {	
-	vec3 lightVec = lightPos - crntPos;
+	vec3 lightVec = lightPos - crntPos + vec3(lightXPos, lightHeight, lightZPos);
 
 	// intensity of light with respect to distance
 	float dist = length(lightVec);
 	float a = 3.0;
 	float b = 0.7;
-	float inten = (1.0f / (a * dist * dist + b * dist + 1.0f)) * lightIntensity;
+	float inten = (1.0f / (a * dist * dist + b * dist + 1.0f)) * (lightIntensity * lightPower);
 
 	// ambient lighting
 	float ambient = 0.20f;
@@ -74,15 +78,15 @@ vec4 direcLight()
 vec4 spotLight()
 {
 	// controls how big the area that is lit up is
-	float outerCone = 0.90f;
-	float innerCone = 0.95f;
+	float outerCone = 2.90f;
+	float innerCone = 0.90f;
 
 	// ambient lighting
 	float ambient = 0.20f;
 
 	// diffuse lighting
 	vec3 normal = normalize(Normal);
-	vec3 lightDirection = normalize(lightPos - crntPos);
+	vec3 lightDirection = normalize(lightPos - crntPos + vec3(lightXPos, lightHeight, lightZPos));
 	float diffuse = max(dot(normal, lightDirection), 0.0f);
 
 	// specular lighting
@@ -94,7 +98,7 @@ vec4 spotLight()
 
 	// calculates the intensity of the crntPos based on its angle to the center of the light cone
 	float angle = dot(vec3(0.0f, -1.0f, 0.0f), -lightDirection);
-	float inten = (clamp((angle - outerCone) / (innerCone - outerCone), 0.0f, 1.0f)) * lightIntensity;
+	float inten = (clamp((angle - outerCone) / (innerCone - outerCone), 0.0f, 1.0f)) * (lightIntensity * lightPower);
 
 	return (texture(diffuse0, texCoord) * (diffuse * inten + ambient) + texture(specular0, texCoord).r * specular * inten) * imguiLightColor;
 }

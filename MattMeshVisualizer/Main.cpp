@@ -75,6 +75,10 @@ int main()
 	float lightIntensity = 0.5f;
 	float imguiLightColor[3] = { 1.0f, 1.0f, 1.0f};
 	int lightType = 0; //0 = direct light, 1 = point, 2 = spot
+	float lightHeight = 1.0f;
+	float lightPower = 1.0f;
+	float lightXPos = 0.0f;
+	float lightZPos = 0.0f;
 
 	// Exporting variables to shaders
 	glUseProgram(shaderProgram.ID);
@@ -84,6 +88,10 @@ int main()
 	glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightIntensity"), lightIntensity);
 	glUniform4f(glGetUniformLocation(shaderProgram.ID, "imguiLightColor"), imguiLightColor[0], imguiLightColor[1], imguiLightColor[2], 1.0f);
 	glUniform1i(glGetUniformLocation(shaderProgram.ID, "lightType"), lightType);
+	glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightHeight"), lightHeight);
+	glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightPower"), lightPower);
+	glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightXPos"), lightXPos);
+	glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightZPos"), lightZPos);
 
 
 	while (!glfwWindowShouldClose(window))
@@ -130,7 +138,6 @@ int main()
 		if (ImGui::Button("Change light type")) {
 			ImGui::OpenPopup("LightTypeMenu");
 		}
-
 		if (ImGui::BeginPopup("LightTypeMenu")) {
 			if (ImGui::MenuItem("Direct light")) {
 				lightType = 0;
@@ -143,6 +150,11 @@ int main()
 			}
 			ImGui::EndPopup();
 		}
+		ImGui::SliderFloat("Light Y", &lightHeight, 0.0f, 20.0f);
+		ImGui::SliderFloat("Light X", &lightXPos, -20.0f, 20.0f);
+		ImGui::SliderFloat("Light Z", &lightZPos, -20.0f, 20.0f);
+		ImGui::SliderFloat("Light Power", &lightPower, 0.0f, 20.0f);
+
 		ImGui::End();
 
 
@@ -166,6 +178,10 @@ int main()
 		glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightIntensity"), lightIntensity);
 		glUniform4f(glGetUniformLocation(shaderProgram.ID, "imguiLightColor"), imguiLightColor[0], imguiLightColor[1], imguiLightColor[2], 1.0f);
 		glUniform1i(glGetUniformLocation(shaderProgram.ID, "lightType"), lightType);
+		glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightHeight"), lightHeight);
+		glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightPower"), lightPower);
+		glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightXPos"), lightXPos);
+		glUniform1f(glGetUniformLocation(shaderProgram.ID, "lightZPos"), lightZPos);
 
 		// Renders the ImGUI elements
 		ImGui::Render();
