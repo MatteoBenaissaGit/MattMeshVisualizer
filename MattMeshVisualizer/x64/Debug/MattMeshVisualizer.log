@@ -284,4 +284,4 @@ F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include\glad\glad.h(3322,
       F:\git\MattMeshVisualizer\MattMeshVisualizer\imgui\imgui_impl_opengl3_loader.h(579,9):
       voir la définition précédente de « glGenVertexArrays »
   
-  MattMeshVisualizer.vcxproj -> F:\git\MattMeshVisualizer\x64\Debug\MattMeshVisualizer.exe
+  MattMeshVisualizer.vcxproj -> F:\git\MattMeshVisualizer\Debug\MattMeshVisualizer.exe

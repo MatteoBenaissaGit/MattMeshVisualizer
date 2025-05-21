@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>F:\git\MattMeshVisualizer\x64\Debug\MattMeshVisualizer.exe</FullPath>
+      <FullPath>F:\git\MattMeshVisualizer\Debug\MattMeshVisualizer.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

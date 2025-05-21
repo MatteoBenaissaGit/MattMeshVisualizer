@@ -12,43 +12,31 @@ const unsigned int height = 800;
 
 int main()
 {
-	// Initialize GLFW
 	glfwInit();
 
-	// Tell GLFW what version of OpenGL we are using 
-	// In this case we are using OpenGL 3.3
+	// version of OpenGL = 3.3
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	// Tell GLFW we are using the CORE profile
-	// So that means we only have the modern functions
+	// CORE profile
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	// Create a GLFWwindow object of 800 by 800 pixels, naming it "MattMeshViewer"
 	GLFWwindow* window = glfwCreateWindow(width, height, "MattMeshViewer", NULL, NULL);
-	// Error check if the window fails to create
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();
 		return -1;
 	}
-	// Introduce the window into the current context
 	glfwMakeContextCurrent(window);
 
 	//Load GLAD so it configures OpenGL
 	gladLoadGL();
 	// Specify the viewport of OpenGL in the Window
-	// In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
 	glViewport(0, 0, width, height);
 
-
-
-
-
-	// Generates Shader object using shaders default.vert and default.frag
 	Shader shaderProgram("default.vert", "default.frag");
 
-	// Take care of all the light related things
+	// light related things
 	glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
 	glm::vec3 lightPos = glm::vec3(0.5f, 0.7f, 0.5f);
 	glm::mat4 lightModel = glm::mat4(1.0f);
@@ -58,17 +46,15 @@ int main()
 	glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 
-
 	// Enables the Depth Buffer
 	glEnable(GL_DEPTH_TEST);
 
-	// Creates camera object
+	//cam
 	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 
-	//create model
+	//model
 	const char* modelPath = "models/map/scene.gltf";
 	Model model(modelPath);
-
 
 	// Initialize ImGUI
 	IMGUI_CHECKVERSION();
@@ -100,30 +86,23 @@ int main()
 	glUniform1i(glGetUniformLocation(shaderProgram.ID, "lightType"), lightType);
 
 
-	// Main while loop
 	while (!glfwWindowShouldClose(window))
 	{
-		// Specify the color of the background
+		// cleat
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
-		// Clean the back buffer and depth buffer
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-
-		// Tell OpenGL a new frame is about to begin
+		// new frame
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
 
 		if (io.WantCaptureMouse == false) 
 		{
-			// Handles camera inputs
 			camera.Inputs(window, cameraInputSpeed);
 		}
-		
-		// Updates and exports the camera matrix to the Vertex Shader
 		camera.updateMatrix(cameraFOV, 0.1f, 100.0f);
 
-		// Draw a model
 		if (showModel) 
 		{
 			model.Draw(shaderProgram, camera);
@@ -195,6 +174,7 @@ int main()
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
+
 		// Take care of all GLFW events
 		glfwPollEvents();
 	}
@@ -205,12 +185,9 @@ int main()
 	ImGui_ImplGlfw_Shutdown();
 	ImGui::DestroyContext();
 
-
-	// Delete all the objects we've created
+	// end
 	shaderProgram.Delete();
-	// Delete window before ending the program
 	glfwDestroyWindow(window);
-	// Terminate GLFW before ending the program
 	glfwTerminate();
 	return 0;
 }

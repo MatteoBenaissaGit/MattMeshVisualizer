@@ -73,10 +73,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include;$(IncludePath)</IncludePath>
     <LibraryPath>F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\include;$(IncludePath)</IncludePath>
     <LibraryPath>F:\git\MattMeshVisualizer\MattMeshVisualizer\Libraries\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
